@@ -1,4 +1,165 @@
-h3{
-       background-color: red;
-       color: white;
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+/* Universal Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", serif;
+}
+
+header,
+.curriculum,
+.story-container , .foot {
+  margin: 0px auto;
+  max-width: 1280px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.text {
+  color: rgb(17, 17, 17);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* Nav bar */
+.mobile {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo h2 {
+  color: rgb(17, 17, 17);
+  font-family: Quicksand;
+  font-size: 32px;
+  font-weight: 700;
+}
+.desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.desktop ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.desktop li {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.btn {
+  border-radius: 12px;
+  background: rgb(254, 163, 1);
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 40px;
+  border: 2px solid rgb(254, 163, 1);
+}
+
+.navul a {
+  transition: text-decoration 1s;
+}
+
+.navul a:hover {
+  text-decoration: underline;
+}
+
+
+.btn:hover {
+  background-color: white;
+  color: rgb(254, 163, 1);
+}
+
+.home a {
+  color: rgb(254, 163, 1);
+  font-weight: 700;
+}
+
+.about a {
+  color: rgb(1, 172, 253);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.faci a {
+  color: rgb(5, 212, 223);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.admi a {
+  color: rgb(93, 88, 239);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Hero Section */
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.hero h2 {
+  font-size: 56px;
+  font-weight: 700;
+}
+.blue-span {
+  color: rgb(254, 163, 1);
+}
+
+.yellow-span {
+  color: rgb(1, 172, 253);
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.btn-enroll {
+  padding: 10px 47px;
+  border-radius: 12px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  border: 2px solid black;
+}
+
+.btn-enroll:hover {
+  background-color: white;
+  color: black;
 }
