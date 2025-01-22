@@ -51,21 +51,21 @@ img {
   font-size: 32px;
   font-weight: 700;
 }
-.desktop {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
 }
 
-.desktop ul {
+.navbar ul {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 32px;
 }
 
-.desktop li {
+.navbar li {
   font-size: 20px;
   font-weight: 500;
 }
@@ -81,11 +81,11 @@ img {
   border: 2px solid rgb(254, 163, 1);
 }
 
-.navul a {
+.navlink a {
   transition: text-decoration 1s;
 }
 
-.navul a:hover {
+.navlink a:hover {
   text-decoration: underline;
 }
 
@@ -107,14 +107,14 @@ img {
   font-weight: 500;
 }
 
-.faci a {
+.facilities a {
   color: rgb(5, 212, 223);
   font-family: Quicksand;
   font-size: 20px;
   font-weight: 500;
 }
 
-.admi a {
+.admission a {
   color: rgb(93, 88, 239);
   font-family: Quicksand;
   font-size: 20px;
@@ -449,8 +449,6 @@ font-weight: 500;
   margin-top: 24px;
 }
 
-
-/* Marquee */
 marquee{
   font-size: 24px;
   font-weight: 500;
