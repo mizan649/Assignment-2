@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
-/* Universal Style */
 * {
   margin: 0;
   padding: 0;
@@ -33,18 +32,14 @@ img {
   font-size: 20px;
   font-weight: 400;
 }
-
-/* Nav bar */
 .mobile {
   display: none;
 }
-
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .logo h2 {
   color: rgb(17, 17, 17);
   font-family: Quicksand;
@@ -57,19 +52,16 @@ img {
   align-items: center;
   padding: 20px 0;
 }
-
 .navbar ul {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 32px;
 }
-
 .navbar li {
   font-size: 20px;
   font-weight: 500;
 }
-
 .btn {
   border-radius: 12px;
   background: rgb(254, 163, 1);
@@ -80,26 +72,20 @@ img {
   padding: 10px 40px;
   border: 2px solid rgb(254, 163, 1);
 }
-
 .navlink a {
   transition: text-decoration 1s;
 }
-
 .navlink a:hover {
   text-decoration: underline;
 }
-
-
 .btn:hover {
   background-color: white;
   color: rgb(254, 163, 1);
 }
-
 .home a {
   color: rgb(254, 163, 1);
   font-weight: 700;
 }
-
 .about a {
   color: rgb(1, 172, 253);
   font-family: Quicksand;
@@ -121,7 +107,6 @@ img {
   font-weight: 500;
 }
 
-/* Hero Section */
 
 .hero {
   display: flex;
@@ -454,10 +439,141 @@ marquee{
   font-weight: 500;
   padding: 24px;
   color: rgb(102, 102, 102);
+  /* background-color: aqua; */
   
 }
 
 .view:hover{
   background-color: white;
   color: black;
+}
+@media screen and (max-width: 680px) {
+  /* Sharend style */
+  .hero,
+  .curriculum,
+  .story-container,
+  .foot {
+    width: calc(100% - 30px);
+    margin: 0px auto;
+  }
+  img {
+    width: 100%;
+  }
+
+  /* Nav bar */
+  .navbar {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile > hr {
+    border: 0.5px solid rgb(254, 163, 1);
+  }
+
+  .mobile-c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    width: calc(100% - 30px);
+    margin: 0px auto;
+  }
+
+  .ham {
+    width: 35px;
+  }
+
+  /* Hero section */
+  .hero {
+    flex-direction: column-reverse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .left h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* standard curriculum */
+  .curriculum h2 {
+    font-size: 26px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  /* Our stories */
+  .story-card {
+    display: none;
+  }
+
+  .all-story {
+    grid-template-columns: 1fr;
+  }
+  .multi-story {
+    gap: 10px;
+  }
+
+  .date2 {
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 12px;
+    width: 130px;
+    margin-top: -22px;
+  }
+
+  .text4 {
+    margin: 10px;
+  }
+
+  /* Footer */
+  .foot {
+    grid-template-columns: 1fr;
+  }
+
+  .kids-edu p {
+    text-align: left;
+  }
+
+  .foot-nav {
+    align-items: flex-start;
+    margin-top: 34px;
+  }
+
+  .social {
+    margin-top: 34px;
+  }
+
+  footer {
+    padding: 100px 0;
+  }
+
+  /* Fixed */
+  .arrow-container {
+    display: none;
+  }
+
+  .story-container h2{
+    font-size: 30px;
+  }
+
+  .curriculum > h2{
+    font-size: 30px;
+  }
 }
